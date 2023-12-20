@@ -55,6 +55,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: scp -o "StrictHostKeyChecking no" 'huchumba-20122023-d2ntmwdvzur#QM_c83mjtpo.e4NCKPaCwtx3jSXm.mN7@huchumba-20122023-d2ntmwdvzur.ssh.ws-eu107.gitpod.io':/workspace/nke-template
+      - run: scp -o "StrictHostKeyChecking no" 'huchumba-20122023-d2ntmwdvzur#QM_c83mjtpo.e4NCKPaCwtx3jSXm.mN7@huchumba-20122023-d2ntmwdvzur.ssh.ws-eu107.gitpod.io:/workspace/nke-template'
       - run: ssh -o "StrictHostKeyChecking no" 'huchumba-20122023-d2ntmwdvzur#QM_c83mjtpo.e4NCKPaCwtx3jSXm.mN7@huchumba-20122023-d2ntmwdvzur.ssh.ws-eu107.gitpod.io' "cd /workspace/nke-template && docker compose pull && docker-compose up -d"
   
