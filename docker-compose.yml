@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  node:
+    image: ghcr.io/huchumba/380-node-3-app:1.0
+    restart: unless-stopped
+    container_name: node-app
+
+  python:
+    image: ghcr.io/huchumba/380-python-3-app:1.0
+    restart: unless-stopped
+    container_name: python-app
